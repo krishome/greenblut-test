@@ -1,0 +1,70 @@
+.reportingContainer {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.reportGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.reportCard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reportCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.reportTitle {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.reportDescription {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.reportMeta {
+  margin-bottom: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid #f0f0f0;
+}
+
+.reportDate {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.reportButton {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.reportButton:hover {
+  background: #0052a3;
+}
+
+.reportButton:active {
+  background: #003d7a;
+}
